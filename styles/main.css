@@ -1,0 +1,624 @@
+.trending{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 10px -5px gray;
+}
+.trending .all-news{
+    width: 68.5%;
+    height: 100%;
+}
+.trending .all-news .top-news{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.trending .all-news .top-news .left-news{
+    width: 55%;
+    height: 100%;
+}
+.trending .all-news .top-news .right-news{
+    width: 45%;
+    height: 100%;
+}
+.trending .all-news .top-news .news{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    background: linear-gradient(60deg, rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.3));
+}
+.trending .all-news .top-news .news img{
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.trending .all-news .top-news .news .news_type{
+    width: fit-content;
+    padding: 0 10px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+.trending .all-news .top-news .news .news_type::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: -19px;
+}
+.trending .all-news .top-news .news .news_type.blue{
+    background-color: rgb(0, 128, 255);
+}
+.trending .all-news .top-news .news .news_type.blue::before{
+    border-top: 15.5px solid transparent;
+    border-left: 10px solid rgb(0, 128, 255);
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid rgb(0, 128, 255);
+}
+.trending .all-news .top-news .news .news_type.pink{
+    background-color: pink;
+}
+.trending .all-news .top-news .news .news_type.pink::before{
+    border-top: 15.5px solid transparent;
+    border-left: 10px solid pink;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid pink;
+}
+.trending .all-news .top-news .news .news_type.green{
+    background-color: green;
+}
+.trending .all-news .top-news .news .news_type.green::before{
+    border-top: 15.5px solid transparent;
+    border-left: 10px solid green;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid green;
+}
+.trending .all-news .top-news .news .news_type.orange{
+    background-color: orange;
+}
+.trending .all-news .top-news .news .news_type.orange::before{
+    border-top: 15.5px solid transparent;
+    border-left: 10px solid orange;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid orange;
+}
+.trending .all-news .top-news .news .title{
+    position: absolute;
+    left: 10px;
+    bottom: 70px;
+    font-size: 20px;
+    transition: 0.8s;
+}
+.trending .all-news .top-news .news .description{
+    position: absolute;
+    left: 10px;
+    bottom: -60px;
+    /* color: rgb(255, 255, 255, 0.8); */
+    transition: 0.8s;
+    font-size: 15px;
+}
+.trending .all-news .top-news .news .date{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+}
+.trending .all-news .top-news .news:hover{
+    background: linear-gradient(60deg, rgb(0, 0, 0 ,0.8), rgb(0, 0, 0, 0.5));
+}
+.trending .all-news .top-news .news:hover .title{
+    bottom: 130px;
+    color: red;
+}
+.trending .all-news .top-news .news:hover .description{
+    bottom: 45px;
+}
+
+.trending .all-ads{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.trending .all-ads .ads{
+    width: 100%;
+    height: 49%;
+    background-color: aliceblue;
+}
+/*  */
+
+
+.video{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 70px;
+    height: 700px;
+    background-color: white;
+    box-shadow: 0 0 10px -5px gray;
+    padding: 20px 20px 0 20px;
+    border-top: 5px solid red;
+    position: relative;
+}
+.video .blog{
+    color: white;
+    background-color: red;
+    width: fit-content;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    padding: 10px 20px;
+    position: absolute;
+    top: -49px;
+    left: 0;
+}
+.video .blog::before{
+    content: "";
+    width: 30px;
+    height: 45px;
+    background-color: red;
+    position: absolute;
+    right: -30px;
+    top: 0;
+    
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+.video .top{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.video .top .news{
+    width: 33%;
+}
+.video .top .news:hover .image img{
+    transform: scale(0.95);
+}
+.video .top .news .image{
+    width: 100%;
+    height: 80%;
+    background-color: black;
+}
+.video .top .news .image img{
+    width: 100%;        
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+.video .top .news .title{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.video .bottom{
+    width: 70%;
+    height: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    position: absolute;
+    bottom: 0;
+}
+.video .bottom .news{
+    width: 22%;
+    height: 40%;
+}
+.video .bottom .news:hover .image img{
+    transform: scale(0.95);
+}
+.video .bottom .news .image{
+    width: 100%;
+    height: 63%;
+    background-color: black;
+}
+.video .bottom .news .image img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    transition: 0.4s;
+}
+/*  */
+
+.Entertainment{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 70px;
+    height: 450px;
+    background-color: white;
+    box-shadow: 0 0 10px -5px gray;
+    padding: 20px 20px 0 20px;
+    border-top: 5px solid rgb(245, 81, 138);
+    position: relative;
+}
+.Entertainment .blog{
+    color: white;
+    background-color: rgb(245, 81, 138);
+    width: fit-content;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    padding: 10px 20px;
+    position: absolute;
+    top: -49px;
+    left: 0;
+}
+.Entertainment .blog::before{
+    content: "";
+    width: 30px;
+    height: 45px;
+    background-color: rgb(245, 81, 138);
+    position: absolute;
+    right: -30px;
+    top: 0;
+    
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+.Entertainment .container{
+    width: 100%;
+    height: 100%    ;
+    display: flex;
+    justify-content: space-between;
+}
+.Entertainment .left{
+    width: 31%;
+    height: 100%;
+    background-color: rgb(245, 81, 138);
+}
+.Entertainment .left:hover img{
+    transform: scale(0.95);
+}
+.Entertainment .left .news{
+    width: 100%;
+    height: 100%;
+}
+.Entertainment .left .news .image{
+    width: 100%;
+    height: 50%;
+    background-color: black;
+    overflow: hidden;
+}
+.Entertainment .left .news .image img{
+    width: 100%;        
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+.Entertainment .left .news .title{
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+}
+
+
+.Entertainment .right{
+    width: 67%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-content: space-between; */
+}
+.Entertainment .right .news{
+    width: 24%;
+    height: 40%;
+}
+.Entertainment .right .news:hover img{
+    transform: scale(0.95);
+}
+.Entertainment .right .news .image{
+    width: 100%;
+    height: 60%;
+}
+.Entertainment .right .news .image img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    transition: 0.4s;
+}
+.Entertainment .right .news .title{
+    color: gray;
+}
+/*  */
+
+.Technology{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 70px;
+    height: 450px;
+    background-color: white;
+    box-shadow: 0 0 10px -5px gray;
+    padding: 20px 20px 0 20px;
+    border-top: 5px solid rgb(0, 174, 255);
+    position: relative;
+}
+.Technology .blog{
+    color: white;
+    background-color: rgb(0, 174, 255);
+    width: fit-content;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    padding: 10px 20px;
+    position: absolute;
+    top: -49px;
+    left: 0;
+}
+.Technology .blog::before{
+    content: "";
+    width: 30px;
+    height: 45px;
+    background-color: rgb(0, 174, 255);
+    position: absolute;
+    right: -30px;
+    top: 0;
+    
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+.Technology .container{
+    width: 100%;
+    height: 100%    ;
+    display: flex;
+    justify-content: space-between;
+}
+.Technology .left{
+    width: 31%;
+    height: 100%;
+    background-color: rgb(0, 174, 255);
+}
+.Technology .left:hover img{
+    transform: scale(0.95);
+}
+.Technology .left .news{
+    width: 100%;
+    height: 100%;
+}
+.Technology .left .news .image{
+    width: 100%;
+    height: 50%;
+    background-color: black;
+    overflow: hidden;
+}
+.Technology .left .news .image img{
+    width: 100%;        
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+.Technology .left .news .title{
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+}
+
+
+.Technology .right{
+    width: 67%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-content: space-between; */
+}
+.Technology .right .news{
+    width: 24%;
+    height: 40%;
+}
+.Technology .right .news:hover img{
+    transform: scale(0.95);
+}
+.Technology .right .news .image{
+    width: 100%;
+    height: 60%;
+}
+.Technology .right .news .image img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    transition: 0.4s;
+}
+.Technology .right .news .title{
+    color: gray;
+}
+/*  */
+
+.LifeandSocial{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 70px;
+    height: 450px;
+    background-color: white;
+    box-shadow: 0 0 10px -5px gray;
+    padding: 20px 20px 0 20px;
+    border-top: 5px solid rgb(117, 194, 117);
+    position: relative;
+}
+.LifeandSocial .blog{
+    color: white;
+    background-color: rgb(117, 194, 117);
+    width: fit-content;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    padding: 10px 20px;
+    position: absolute;
+    top: -49px;
+    left: 0;
+}
+.LifeandSocial .blog::before{
+    content: "";
+    width: 30px;
+    height: 45px;
+    background-color: rgb(117, 194, 117);
+    position: absolute;
+    right: -30px;
+    top: 0;
+    
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+.LifeandSocial .container{
+    width: 100%;
+    height: 100%    ;
+    display: flex;
+    justify-content: space-between;
+}
+.LifeandSocial .left{
+    width: 31%;
+    height: 100%;
+    background-color: rgb(117, 194, 117);
+}
+.LifeandSocial .left:hover img{
+    transform: scale(0.95);
+}
+.LifeandSocial .left .news{
+    width: 100%;
+    height: 100%;
+}
+.LifeandSocial .left .news .image{
+    width: 100%;
+    height: 50%;
+    background-color: black;
+    overflow: hidden;
+}
+.LifeandSocial .left .news .image img{
+    width: 100%;        
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+.LifeandSocial .left .news .title{
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+}
+
+
+.LifeandSocial .right{
+    width: 67%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-content: space-between; */
+}
+.LifeandSocial .right .news{
+    width: 24%;
+    height: 40%;
+}
+.LifeandSocial .right .news:hover img{
+    transform: scale(0.95);
+}
+.LifeandSocial .right .news .image{
+    width: 100%;
+    height: 60%;
+}
+.LifeandSocial .right .news .image img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    transition: 0.4s;
+}
+.LifeandSocial .right .news .title{
+    color: gray;
+}
+/*  */
+
+.Sport{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 70px;
+    height: 450px;
+    background-color: white;
+    box-shadow: 0 0 10px -5px gray;
+    padding: 20px 20px 0 20px;
+    border-top: 5px solid orange;
+    position: relative;
+}
+.Sport .blog{
+    color: white;
+    background-color: orange;
+    width: fit-content;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    padding: 10px 20px;
+    position: absolute;
+    top: -49px;
+    left: 0;
+}
+.Sport .blog::before{
+    content: "";
+    width: 30px;
+    height: 45px;
+    background-color: orange;
+    position: absolute;
+    right: -30px;
+    top: 0;
+    
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+.Sport .container{
+    width: 100%;
+    height: 100%    ;
+    display: flex;
+    justify-content: space-between;
+}
+.Sport .left{
+    width: 31%;
+    height: 100%;
+    background-color: orange;
+}
+.Sport .left:hover img{
+    transform: scale(0.95);
+}
+.Sport .left .news{
+    width: 100%;
+    height: 100%;
+}
+.Sport .left .news .image{
+    width: 100%;
+    height: 50%;
+    background-color: black;
+    overflow: hidden;
+}
+.Sport .left .news .image img{
+    width: 100%;        
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+.Sport .left .news .title{
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+}
+
+
+.Sport .right{
+    width: 67%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-content: space-between; */
+}
+.Sport .right .news{
+    width: 24%;
+    height: 40%;
+}
+.Sport .right .news:hover img{
+    transform: scale(0.95);
+}
+.Sport .right .news .image{
+    width: 100%;
+    height: 60%;
+}
+.Sport .right .news .image img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    transition: 0.4s;
+}
+.Sport .right .news .title{
+    color: gray;
+}
+/*  */
